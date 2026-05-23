@@ -2,15 +2,15 @@ services:
   postgres:
     image: postgres:16-alpine
     environment:
-      POSTGRES_USER: neebap
-      POSTGRES_PASSWORD: neebap
-      POSTGRES_DB: neebapnaebap
+      POSTGRES_USER: neepick
+      POSTGRES_PASSWORD: neepick
+      POSTGRES_DB: neepicknaepick
     ports:
       - "5432:5432"
     volumes:
       - postgres-data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U neebap -d neebapnaebap"]
+      test: ["CMD-SHELL", "pg_isready -U neepick -d neepicknaepick"]
       interval: 5s
       timeout: 5s
       retries: 10
@@ -34,8 +34,8 @@ services:
     entrypoint: >
       /bin/sh -c "
       until mc alias set local http://minio:9000 minioadmin minioadmin; do sleep 1; done;
-      mc mb --ignore-existing local/neebapnaebap-local;
-      mc anonymous set download local/neebapnaebap-local;
+      mc mb --ignore-existing local/neepicknaepick-local;
+      mc anonymous set download local/neepicknaepick-local;
       "
 
 volumes:

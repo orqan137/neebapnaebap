@@ -1,39 +1,31 @@
-# NeebapNaebap
+# NeepickNaepick
 
-![NeebapNaebap hero illustration](docs/assets/neebapnaebap-hero.png)
+![NeepickNaepick hero illustration](docs/assets/neepicknaepick-hero.png)
 
-**니밥내밥**은 친구들끼리 점심 사진을 올리고, 맛·가성비·건강함 기준으로 투표해 “오늘의 점심 승자”를 정하는 friends-only lunch photo battle 앱입니다.
+**NeepickNaepick(니픽내픽)**은 친구끼리 “내 픽 vs 네 픽”을 올리고, 서로 고르거나 커뮤니티에 물어보며 더 나은 선택을 정하는 소셜 픽 배틀 앱입니다.
 
-## What it does
+점심 메뉴에만 묶이지 않습니다. 패션, 맛집, 카페, 여행지, 데이트 코스, 전자기기, 콘텐츠, 선물, 운동 루틴처럼 일상에서 고르는 모든 선택지가 배틀이 됩니다.
 
-친구들의 점심 사진은 그냥 채팅방에 흘러가면 금방 잊힙니다. NeebapNaebap은 그 순간을 작은 게임으로 바꿉니다.
+## App preview
 
-1. 친구들이 오늘 먹은 점심 사진을 업로드합니다.
-2. 각 사진은 `taste`, `value`, `healthy` 같은 기준으로 평가됩니다.
-3. 배틀 결과에서 항목별 우승자와 종합 우승자를 보여줍니다.
-4. 의견이 갈리거나 외부 판정을 받고 싶으면 커뮤니티 리뷰로 공유할 수 있습니다.
+이번 스캐폴드의 웹 프론트는 실제 앱 소개/프로토타입처럼 보이도록 임시 주요 화면을 포함합니다.
 
-## README image concept
+- **Friend Pick Battle:** 친구와 둘만의 픽을 나란히 놓고 바로 고르는 화면
+- **Community Vote:** 친구끼리 결론이 안 날 때 커뮤니티 투표를 받는 화면
+- **Result Share:** 투표율, 코멘트, 최종 픽을 확인하고 다시 공유하는 화면
 
-The hero image shows the product’s core loop at a glance:
+## Product loop
 
-- **Upload:** 점심 사진을 빠르게 올리는 모바일 화면
-- **Vote:** 맛, 가성비, 건강함 기준의 playful vote cards
-- **Winner:** 친구 투표 결과와 커뮤니티 공유 흐름
-- **Mood:** 따뜻한 점심 테이블, 한국적인 도시락/분식 무드, coral + green 포인트 컬러
+1. 친구가 비교하고 싶은 두 개 이상의 픽을 올립니다.
+2. 서로 “내 픽 / 네 픽” 중 하나를 고릅니다.
+3. 갈리면 커뮤니티에 공개 투표로 넘깁니다.
+4. 투표율, 댓글, 승자 픽을 모아 결과 카드로 공유합니다.
 
 ## Apps
 
-- `neebapnaebap-mobile`: Bare React Native + TypeScript mobile app.
-- `neebapnaebap-be`: FastAPI backend.
-- `neebapnaebap-web`: React web frontend for admin, landing, share/fallback pages.
-
-## Core loop
-
-1. Friends upload lunch images.
-2. Friends vote by multiple dimensions: taste, value, healthy.
-3. Battle results choose category winners and an overall winner.
-4. If friends disagree or want outside judgement, the battle can be shared to community review.
+- `neepicknaepick-mobile`: Bare React Native + TypeScript mobile app.
+- `neepicknaepick-be`: FastAPI backend.
+- `neepicknaepick-web`: React web frontend for landing, app preview, share/fallback pages.
 
 ## Local services
 
@@ -48,7 +40,7 @@ docker compose up -d postgres minio
 ## Backend
 
 ```bash
-cd neebapnaebap-be
+cd neepicknaepick-be
 uv sync
 uv run pytest
 uv run uvicorn app.main:app --reload
@@ -57,7 +49,7 @@ uv run uvicorn app.main:app --reload
 ## Web
 
 ```bash
-cd neebapnaebap-web
+cd neepicknaepick-web
 npm install
 npm run dev
 ```
@@ -67,7 +59,7 @@ npm run dev
 The mobile package is intentionally bare React Native-oriented, not WebView/Capacitor.
 
 ```bash
-cd neebapnaebap-mobile
+cd neepicknaepick-mobile
 npm install
 npm run start
 ```

@@ -1,7 +1,7 @@
 [project]
-name = "neebapnaebap-be"
+name = "neepicknaepick-be"
 version = "0.1.0"
-description = "FastAPI backend for NeebapNaebap lunch battle app"
+description = "FastAPI backend for NeepickNaepick pick battle app"
 requires-python = ">=3.11"
 dependencies = [
   "fastapi>=0.115.0",

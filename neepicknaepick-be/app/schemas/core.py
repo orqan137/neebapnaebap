@@ -3,9 +3,9 @@ from pydantic import BaseModel, Field
 
 
 class VoteCategoryDto(StrEnum):
-    taste = "taste"
+    vibe = "vibe"
     value = "value"
-    healthy = "healthy"
+    usefulness = "usefulness"
 
 
 class ImageUploadIntentRequest(BaseModel):
@@ -24,7 +24,7 @@ class ImageUploadIntentResponse(BaseModel):
 class BattleCreateRequest(BaseModel):
     group_id: str
     title: str
-    categories: list[VoteCategoryDto] = [VoteCategoryDto.taste, VoteCategoryDto.value, VoteCategoryDto.healthy]
+    categories: list[VoteCategoryDto] = [VoteCategoryDto.vibe, VoteCategoryDto.value, VoteCategoryDto.usefulness]
 
 
 class VoteRequest(BaseModel):

@@ -16,9 +16,9 @@ class BattleStatus(StrEnum):
 
 
 class VoteCategory(StrEnum):
-    taste = "taste"
+    vibe = "vibe"
     value = "value"
-    healthy = "healthy"
+    usefulness = "usefulness"
 
 
 class User(Base):
@@ -79,7 +79,7 @@ class BattleEntry(Base):
     battle_id: Mapped[str] = mapped_column(ForeignKey("battles.id"), nullable=False)
     user_id: Mapped[str] = mapped_column(ForeignKey("users.id"), nullable=False)
     image_id: Mapped[str] = mapped_column(ForeignKey("images.id"), nullable=False)
-    meal_name: Mapped[str | None] = mapped_column(String(80))
+    pick_title: Mapped[str | None] = mapped_column(String(80))
     price_krw: Mapped[int | None] = mapped_column(Integer)
     caption: Mapped[str | None] = mapped_column(String(240))
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())

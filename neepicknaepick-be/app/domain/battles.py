@@ -4,9 +4,9 @@ from enum import StrEnum
 
 
 class VoteCategory(StrEnum):
-    TASTE = "taste"
+    VIBE = "vibe"
     VALUE = "value"
-    HEALTHY = "healthy"
+    USEFULNESS = "usefulness"
 
 
 @dataclass(frozen=True)
@@ -17,7 +17,7 @@ class BattleResults:
 
 
 class BattleDomain:
-    """Pure domain model for friend-powered meal battles.
+    """Pure domain model for friend-powered pick battles.
 
     A voter can cast one vote per category. Category winners receive one overall point;
     the overall winner is the entry with the most category wins. Ties are returned as None.
