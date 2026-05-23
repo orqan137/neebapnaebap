@@ -1,6 +1,6 @@
 # NeepickNaepick
 
-![NeepickNaepick hero illustration](docs/assets/neepicknaepick-hero.png)
+![NeepickNaepick app preview](docs/assets/neepicknaepick-hero.png)
 
 **NeepickNaepick(니픽내픽)**은 친구끼리 “내 픽 vs 네 픽”을 올리고, 서로 고르거나 커뮤니티에 물어보며 더 나은 선택을 정하는 소셜 픽 배틀 앱입니다.
 
