@@ -14,7 +14,7 @@ const lunchPicks = [
     owner: '현우의 점심',
     title: '제육 정식',
     meta: '9,000원 · 백반집 오늘 메뉴',
-    image: 'linear-gradient(135deg, #f4eee3 0%, #d75b3f 42%, #f1d29a 43%, #7c9f5a 100%)',
+    image: 'linear-gradient(135deg, #f4e6d4 0%, #d75b3f 42%, #f1d29a 43%, #7c9f5a 100%)',
     votes: 38,
   },
 ];
@@ -32,31 +32,31 @@ function App() {
     <main className="app-shell">
       <section className="hero-section">
         <nav className="nav-bar">
-          <div className="brand-mark">밥</div>
-          <span>니밥내밥</span>
-          <button>점심 배틀 보기</button>
+          <div className="brand-mark">NP</div>
+          <span>NeepickNaepick</span>
+          <button>앱 미리보기</button>
         </nav>
         <div className="hero-grid">
           <div className="hero-copy">
-            <p className="eyebrow">daily lunch battle</p>
-            <h1>점심시간마다 자동으로 열리는 친구들의 밥 대결.</h1>
+            <p className="eyebrow">니픽내픽 · category battle app</p>
+            <h1>첫 번째 카테고리는 매일 점심에 열리는 니밥내밥.</h1>
             <p>
-              같이하기로 한 친구들이 점심 사진을 올리면 맛, 가성비, 다이어트 기준으로
-              오늘의 승자를 고릅니다. 애매한 날은 커뮤니티가 마지막 판정을 내려줍니다.
+              NeepickNaepick은 친구끼리 선택지를 올리고 기준별로 승자를 고르는 범용 앱입니다.
+              니밥내밥을 시작으로 니옷내옷, 니일내일 같은 일상 배틀로 확장됩니다.
             </p>
             <div className="category-tabs">
               {verticals.map((item) => <span key={item}>{item}</span>)}
             </div>
           </div>
-          <PhoneFrame title="오늘의 니밥내밥">
+          <PhoneFrame title="니밥내밥 · 오늘의 점심">
             <LunchBattleScreen />
           </PhoneFrame>
         </div>
       </section>
 
       <section className="section-heading">
-        <p className="eyebrow">Product flow</p>
-        <h2>친구끼리 고르고, 필요하면 커뮤니티가 판정합니다.</h2>
+        <p className="eyebrow">Featured flow</p>
+        <h2>니밥내밥은 친구끼리 점심 사진을 올리고, 필요하면 커뮤니티가 판정합니다.</h2>
       </section>
 
       <section className="screens-grid">

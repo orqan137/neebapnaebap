@@ -2,7 +2,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    app_name: str = "니밥내밥 API"
+    app_name: str = "NeepickNaepick API"
     environment: str = "local"
     database_url: str = "postgresql+psycopg://neepick:neepick@localhost:5432/neepicknaepick"
     s3_endpoint_url: str | None = "http://localhost:9000"

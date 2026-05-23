@@ -1,19 +1,20 @@
-# 니밥내밥 MVP PRD
+# NeepickNaepick MVP PRD
 
 ## Goal
 
-니밥내밥은 매일 점심시간마다 친구 그룹에 자동으로 열리는 사진 업로드/투표 경험이다. 같이하기로 한 친구들이 각자의 점심 사진을 올리고, 친구끼리 먼저 맛·가성비·다이어트 기준으로 승자를 고른다. 결론이 애매하면 커뮤니티가 외부 판정단처럼 승자를 정해준다.
+NeepickNaepick은 친구끼리 각자의 선택지를 올리고, 카테고리별 기준으로 비교한 뒤, 필요하면 커뮤니티 판정을 받아 승자를 고르는 소셜 배틀 앱이다. 첫 번째 대표 카테고리는 니밥내밥이며, 매일 점심시간마다 친구 그룹에 자동으로 열리는 사진 업로드/투표 경험을 제공한다.
 
 ## MVP scope
 
 1. Friend/group creation.
-2. Daily lunch battle auto-creation for each opted-in friend group.
+2. Daily 니밥내밥 battle auto-creation for each opted-in friend group.
 3. Food photo upload through presigned storage URLs.
 4. Short menu memo and price input.
-5. Friend voting by three criteria: taste, value, diet.
+5. Friend voting by three 니밥내밥 criteria: taste, value, diet.
 6. Results by criterion and overall winner.
 7. Community vote request when friends want outside judgement.
 8. Shareable result card for today’s winner.
+9. Category model that can later support 니옷내옷 and 니일내일 with their own criteria.
 
 ## Primary categories
 
@@ -23,11 +24,12 @@
 
 ## Core loop
 
-1. Lunch time opens today’s 니밥내밥 automatically.
-2. Friends in the group upload their food photos.
-3. The group votes across taste, value, and diet.
-4. The app calculates per-criterion winners and an overall winner.
-5. Optional community voting resolves ties or adds outside judgement.
+1. A category battle opens for a friend group.
+2. For 니밥내밥, lunch time opens today’s battle automatically.
+3. Friends in the group upload their photos or choices.
+4. The group votes across the category’s criteria.
+5. The app calculates per-criterion winners and an overall winner.
+6. Optional community voting resolves ties or adds outside judgement.
 
 ## Non-goals for first skeleton
 
