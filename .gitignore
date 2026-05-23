@@ -1,0 +1,23 @@
+# Python
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.env
+*.pyc
+
+# Node
+node_modules/
+dist/
+build/
+.next/
+coverage/
+
+# React Native
+android/.gradle/
+ios/Pods/
+*.keystore
+
+# Local data
+.minio/
+.postgres/

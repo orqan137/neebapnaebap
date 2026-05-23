@@ -1,0 +1,1 @@
+{"extends":"./node_modules/@react-native/typescript-config/tsconfig.json","compilerOptions":{"strict":true,"jsx":"react-jsx"},"include":["src/**/*.ts","src/**/*.tsx","App.tsx"]}
